@@ -1,6 +1,6 @@
 # find-image-with-image
 
-使用 Clip 模型对图象进行模式匹配——简单的说就是“按图索骥”。
+使用 [CLIP](https://github.com/openai/CLIP) 模型对图象进行模式匹配——简单的说就是“按图索骥”。
 
 ## 使用
 
