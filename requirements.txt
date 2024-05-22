@@ -2,3 +2,4 @@ clip_cpp
 fastapi
 uvicorn
 python-multipart
+lancedb
