@@ -1,0 +1,15 @@
+meta {
+  name: upload_file
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{HOST}}/upload_file
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(Z:\projects\d2c\test_data\button-1.png)
+}
