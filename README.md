@@ -10,7 +10,8 @@
 
 gguf 格式可以到 https://huggingface.co/mys/ggml_clip-vit-large-patch14/tree/main 下载。
 
-推荐选择 Q5_1 或 Q8_0 的量化版本，当前使用 clip-vit-large-patch14_ggml-model-q8_0.gguf 进行测试。将下载得到的 gguf 文件放置到 models 目录下。
+推荐选择 Q5_1 或 Q8_0 的量化版本，当前使用 `CLIP-ViT-L-14-laion2B-s32B-b82K_ggml-model-q5_1.gguf` 进行测试。将下载得到的
+gguf 文件放置到 models 目录下。
 
 2. 安装依赖
 
@@ -23,7 +24,7 @@ $ uv pip install -r requirements.txt
 3. 执行
 
 ```sh
-$ python main.py
+$ python clip_service_test.py
 
 (d2c) $ python main.py
 input1 vs input2 0.937790036201477
@@ -33,7 +34,8 @@ input1 vs select1 0.9491289258003235
 input1 vs button1 0.7936016917228699
 ```
 
-注意 clip.cpp 的 pip 包并没有带上 windows 的 dll 文件。可以将 dlls/win64.7z 解压到 .venv/Lib/site-packages/clip_cpp 目录下。如果出现无法找到符号的揭示，可以尝试手工修改代码。
+注意 clip.cpp 的 pip 包并没有带上 windows 的 dll 文件。可以将 dlls/win64.7z 解压到 .venv/Lib/site-packages/clip_cpp
+目录下。如果出现无法找到符号的揭示，可以尝试手工修改代码。
 
 ### HACK
 
