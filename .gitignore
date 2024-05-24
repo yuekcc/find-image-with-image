@@ -4,5 +4,6 @@
 
 /clip.cpp
 /.venv
+/store/file/*
 __pycache__
 *gguf
